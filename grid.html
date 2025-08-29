@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        .parent{
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            gap: 10px;
+            grid-auto-rows: 32%;
+            grid-template-areas: 'picture1 picture2 picture3 picture4 picture4'
+            'picture5 picture6 picture3 picture9 picture9'
+            'picture7 picture6 picture8 picture9 picture9';
+        }
+        .parent>img{
+            height: 100%;
+            width: 100%;
+        }
+        .picture1{
+            grid-area: picture1;
+        }
+        .picture2{
+            grid-area: picture2;
+        }
+        .picture3{
+            grid-area: picture3;
+        }
+        .picture4{
+            grid-area: picture4;
+        }
+        .picture5{
+            grid-area: picture5;
+        }
+        .picture6{
+            grid-area: picture6;
+        }
+        .picture7{
+            grid-area: picture7;
+        }
+        .picture8{
+            grid-area: picture8;
+        }
+        .picture9{
+            grid-area: picture9;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" alt="" class="picture1">
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" alt="" class="picture2">
+        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="" class="picture3">
+        <img src="https://ik.imagekit.io/serenity/ByteofDev/Blog_Content_Images/tr:f-jpg/speed_up_images_original_R8oje17ew" alt="" class="picture4">
+        <img src="https://images.unsplash.com/photo-1626808642875-0aa545482dfb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" alt="" class="picture5">
+        <img src="https://thumbs.dreamstime.com/b/earth-globe-family-hands-world-environment-day-concept-elements-image-furnished-nasa-172933016.jpg" alt="" class="picture6">
+        <img src="https://tinypng.com/images/social/website.jpg" alt="" class="picture7">
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?cs=srgb&dl=pexels-chevanon-1108099.jpg&fm=jpg" alt="" class="picture8">
+        <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="picture9">
+    </div>
+</body>
+</html>
