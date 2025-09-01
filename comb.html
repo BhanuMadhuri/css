@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Combinators </title>
+  <style>
+    .middle p {
+      color: darkblue;
+    }
+    .middle span {
+      background-color: #fce4ec;
+    }
+    .outer > p {
+      color: green;
+    }
+    .outer > span {
+      color: purple;
+      font-size: 18px;
+    }
+    .weird span {
+      color: salmon;  
+    }
+    .middle div p {
+      background-color: #fff3e0;
+      color: brown;
+    }
+    article + p {
+      color: crimson;
+    }
+    article ~ p {
+      background-color: #e0f7fa;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <section class="outer">
+    <div class="middle">
+      <article class="weird">
+        <p>Paragraph 1</p>
+        <span>Span in article</span>
+      </article>
+      <p>Paragraph 2</p>
+      <span>Span in middle</span>
+      <div>
+        <p>Nested Paragraph 3</p>
+      </div>
+    </div>
+    <p>Paragraph 4</p>
+    <span>Span in outer</span>
+  </section>
+  <article>
+    <p>Paragraph 5</p>
+  </article>
+  <p>Paragraph 6</p>
+</body>
+</html>
